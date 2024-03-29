@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Custom Checkbox 1 -->
+    <LinearLayout
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/custom_checkbox_icon_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_local_pizza_24"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="8dp"/>
+
+        <TextView
+            android:id="@+id/custom_checkbox_label_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Custom Checkbox 2 -->
+    <LinearLayout
+        android:id="@+id/cb2"
+        android:layout_below="@id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/custom_checkbox_icon_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_fastfood_24"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="8dp"/>
+
+        <TextView
+            android:id="@+id/custom_checkbox_label_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burger"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Custom Checkbox 3 -->
+    <LinearLayout
+        android:id="@+id/cb3"
+        android:layout_below="@id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/custom_checkbox_icon_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_radio_button_unchecked_24"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="8dp"/>
+
+        <TextView
+            android:id="@+id/custom_checkbox_label_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/B1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/cb3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
